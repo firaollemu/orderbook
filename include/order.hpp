@@ -33,12 +33,16 @@ struct Order {
 };
 
 
+
+// Fill -  a record of an actual trade execuation because of two orders matching
+// Created when two orders match
+// Report of completed trades
 struct Fill {
-    OrderId taker{ kInvalidOrderId };
-    OrderId maker{ kInvalidOrderId };
-    Px px{ 0 };
-    Qty qty{ 0 };
-    std::uint64_t ts { 0 };
+    OrderId taker{ kInvalidOrderId }; // incoming order
+    OrderId maker{ kInvalidOrderId }; // resting order
+    Px px{ 0 }; // price
+    Qty qty{ 0 }; // quantity
+    std::uint64_t ts { 0 }; // timestamp
 };
 
 inline const char* to_cstr(Side s) noexcept {
