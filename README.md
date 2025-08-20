@@ -1,5 +1,6 @@
-# C++ limit order book simulator with ML-Driven Market Making 
-# Built with the help of LLM
+# C++ limit order book simulator with ML-Driven Market Making (used LLM for trivial and redundant tasks)
+
+# Goal: understand quantitative development and market making.
 
 # To build:
 ```bash
