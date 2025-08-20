@@ -1,4 +1,5 @@
-# C++ limit order book simulator with ML-Driven Market Making
+# C++ limit order book simulator with ML-Driven Market Making 
+# Built with the help of LLM
 
 # To build:
 ```bash
