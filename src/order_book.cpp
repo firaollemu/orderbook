@@ -40,67 +40,101 @@ std::vector<Fill> OrderBook::add_limit(const Order& in) {
 
     Order o = in; // mutable copy of order
 
-    auto take_from_level = [&](auto& side_map) {
-        while (o.qty > 0 && !side_map.empty()) {
-            auto lvl_it = side_map.begin();
+    auto take_from_asks = [&]() {
+        while (o.qty > 0 && !asks_.empty()) {
+            auto lvl_it = asks_.begin();
             Px lvl_px = lvl_it->first;
             auto& fifo = lvl_it->second.fifo;
 
-            bool crosses_now = (o.side == Side::Buy) ? (o.px >= lvl_px) : (o.px <= lvl_px);
-
+            bool crosses_now = o.side == Side::Buy && o.px >= lvl_px;
             if (!crosses_now) break;
 
             while (o.qty > 0 && !fifo.empty()) {
-                Order& maker = fifo.front(); // asks sotred in ascending order
-                Qty traded = (o.qty < maker.qty) ? o.qty : maker.qty;
+                Order& maker = fifo.front();
+                Qty traded = std::min(o.qty, maker.qty);
 
-                out.push_back(Fill{
-                        o.id,
-                        maker.id,
-                        lvl_px,
-                        traded,
-                        o.ts
-                    });
-
-                o.qty -= taded;
+                out.push_back(Fill{o.id, maker.id, lvl_px, traded, o.ts});
+                o.qty -= traded;
                 maker.qty -= traded;
 
                 if (maker.qty == 0) {
-                    // can no longer sell this
                     id_index_.erase(maker.id);
                     fifo.pop_front();
                 }
             }
 
             if (fifo.empty()) {
-                side_map.erase(lvl_it);
+                asks_.erase(lvl_it);
             }
         }
     };
 
+    auto take_from_bids = [&]() {
+        while (o.qty > 0 && !bids_.empty()) {
+            auto lvl_it = bids_.begin();
+            Px lvl_px = lvl_it->first;
+            auto& fifo = lvl_it->second.fifo;
+
+            bool crosses_now = o.side == Side::Sell && o.px <= lvl_px;
+            if (!crosses_now) break;
+
+            while (o.qty > 0 && !fifo.empty()) {
+                Order& maker = fifo.front();
+                Qty traded = std::min(o.qty, maker.qty);
+
+                out.push_back(Fill{o.id, maker.id, lvl_px, traded, o.ts});
+                o.qty -= traded;
+                maker.qty -= traded;
+
+                if (maker.qty == 0) {
+                    id_index_.erase(maker.id);
+                    fifo.pop_front();
+                }
+            }
+
+            if (fifo.empty()) {
+                bids_.erase(lvl_it);
+            }
+        }
+    };
+
+    // First try to match with opposite side
     if (o.side == Side::Buy) {
-        take_from_level(ask_);
+        take_from_asks();
     } else {
-        take_from_level(bids_);
+        take_from_bids();
     }
 
 
     // incoming order wasn't fully matched; save residual qty in book
     if (o.qty > 0) {
-        auto& my_map = (o.side == Side::Buy) ? bids_ : asks_;
-        auto [lvl_it, inserted] = my_map.try_emplace(o.px, Level{});
-        Level& lvl = lvl_it->second;
-        
-        lvl.fifo.push_back(o);
-        auto qit = std::prev(lvl.fifo.end()); // (qit - queue iterator) iterator pointing to this order
+        if (o.side == Side::Buy) {
+            auto [lvl_it, inserted] = bids_.try_emplace(o.px, Level{});
+            Level& lvl = lvl_it->second;
+            
+            lvl.fifo.push_back(o);
+            auto qit = std::prev(lvl.fifo.end());
 
+            Handle h;
+            h.side = BookSideTag::Bid;
+            h.px = o.px;
+            h.qit = qit;
 
-        Handle h;
-        h.side = (o.side == Side::Buy) ? BookSideTag::Bid : BookSideTag::Ask;
-        h.px = o.px;
-        h.qit = qit;
+            id_index_[o.id] = h;
+        } else {
+            auto [lvl_it, inserted] = asks_.try_emplace(o.px, Level{});
+            Level& lvl = lvl_it->second;
+            
+            lvl.fifo.push_back(o);
+            auto qit = std::prev(lvl.fifo.end());
 
-        id_index_[o.id] = h;
+            Handle h;
+            h.side = BookSideTag::Ask;
+            h.px = o.px;
+            h.qit = qit;
+
+            id_index_[o.id] = h;
+        }
     }
     return out;
 }

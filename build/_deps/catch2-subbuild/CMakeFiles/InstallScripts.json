@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/fglemu/Desktop/orderbook/build/_deps/catch2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

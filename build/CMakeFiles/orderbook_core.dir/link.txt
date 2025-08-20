@@ -1,0 +1,2 @@
+/usr/bin/ar qc liborderbook_core.a CMakeFiles/orderbook_core.dir/src/order_book.cpp.o
+/usr/bin/ranlib liborderbook_core.a

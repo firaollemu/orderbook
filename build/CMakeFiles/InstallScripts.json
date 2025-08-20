@@ -1,7 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/fglemu/Desktop/orderbook/build/cmake_install.cmake"
+		"/Users/fglemu/Desktop/orderbook/build/cmake_install.cmake",
+		"/Users/fglemu/Desktop/orderbook/build/_deps/catch2-build/cmake_install.cmake",
+		"/Users/fglemu/Desktop/orderbook/build/_deps/catch2-build/src/cmake_install.cmake",
+		"/Users/fglemu/Desktop/orderbook/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,0 +1,9 @@
+Add: resting order goes to correct side and best price updates 9 0.0021612
+Crossing generates fills at maker prices with FIFO across levells 9 0.00203839
+Cancel removes resting order and empty level 18 0.000790535
+Partial Fill: taker < maker; maker stays in book with reduced size 4 0.00378535
+Partial fill: taker spans multiple makers; remaining stays in orderbook 4 0.00386282
+Full fill: maker and taker request same amount. Fill goes through. Both are gone. 2 0.00676733
+Cancel non-existent order id returns false and does nothing 1 0.0189408
+Cancel prev order removes level and updates best price 1 0.0138407
+---
