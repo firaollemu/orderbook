@@ -11,8 +11,9 @@ add_library(orderbook_core
     src/order_book.cpp)
 
 target_include_directories(orderbook_core PUBLIC include)
-
-add_executable(OrderBook src/main.cpp)
+add_executable(OrderBook
+    src/demo.cpp
+    src/order_book.cpp)
 target_link_libraries(OrderBook PRIVATE orderbook_core)
 
 

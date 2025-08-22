@@ -5,6 +5,9 @@ add_executable(orderbook_tests
     test_partial_fill.cpp
     test_full_fill.cpp
     test_cancel_edge_case.cpp
+    test_snapshot.cpp
+    test_order_id_gen.cpp
+    test_logging.cpp
 )
 
 target_link_libraries(orderbook_tests

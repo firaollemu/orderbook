@@ -494,6 +494,9 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
+//Enable testing code
+ORDERBOOK_TESTING:BOOL=ON
+
 //Value Computed by CMake
 OrderBook_BINARY_DIR:STATIC=/Users/fglemu/Desktop/orderbook/build
 

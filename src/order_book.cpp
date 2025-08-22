@@ -139,6 +139,48 @@ std::vector<Fill> OrderBook::add_limit(const Order& in) {
     return out;
 }
 
+namespace {
+    inline Qty level_total_qty(const Level& lvl) noexcept {
+        Qty sum = 0;
+        for (const auto& o : lvl.fifo) sum += o.qty;
+        return sum;
+    }
+}
+
+template <typename PriceMap>
+std::vector<std::pair<Px, Qty>>
+top_of_side(const PriceMap& side, int depth) {
+    std::vector<std::pair<Px, Qty>> out;
+    if (depth <= 0 || side.empty()) return out;
+    out.reserve(static_cast<size_t>(depth));
+
+    auto it = side.begin();
+    int count = 0;
+
+    while (it != side.end() && count < depth) {
+        const Px px = it->first;
+        const Qty qty = level_total_qty(it->second);
+
+        if (qty > 0) {
+            out.emplace_back(px, qty);
+            count++;
+        }
+
+        ++it;
+    }
+
+    return out;
+}
+
+// get the top depth bids/asks available from the order book
+std::vector<std::pair<Px, Qty>> OrderBook::top_bids(int depth) const {
+    return top_of_side(bids_, depth);
+}
+
+std::vector<std::pair<Px, Qty>> OrderBook::top_asks(int depth) const {
+    return top_of_side(asks_, depth);
+}
+
 bool OrderBook::cancel(OrderId id) {
     auto hit = id_index_.find(id);
     if (hit == id_index_.end()) return false;
@@ -169,4 +211,16 @@ bool OrderBook::cancel(OrderId id) {
         if (lvl.fifo.empty()) asks_.erase(lvl_it);
         return true;
     }
+}
+
+OrderBook::SubmitResult OrderBook::submit_limit(Order o) {
+    if (o.id == kInvalidOrderId) {
+        o.id = order_id_gen.next();
+    }
+
+    auto fills = add_limit(o);
+    return SubmitResult{
+        o.id,
+        std::move(fills)
+    };
 }

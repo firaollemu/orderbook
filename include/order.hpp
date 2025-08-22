@@ -14,7 +14,6 @@ enum class Side : std::uint8_t {
     Sell = 1
 };
 
-
 inline int side_sign(Side s) noexcept {
     return s == Side::Buy ? +1 : -1;
 }
@@ -33,7 +32,6 @@ struct Order {
 };
 
 
-
 // Fill -  a record of an actual trade execuation because of two orders matching
 // Created when two orders match
 // Report of completed trades
@@ -45,10 +43,10 @@ struct Fill {
     std::uint64_t ts { 0 }; // timestamp
 };
 
+
 inline const char* to_cstr(Side s) noexcept {
     return s == Side::Buy ? "Buy" : "Sell";
 }
-
 
 inline bool valid_id(OrderId id) noexcept {
     return id != kInvalidOrderId;

@@ -260,6 +260,54 @@ test_full_fill.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_full_fill.cpp.s
 .PHONY : test_full_fill.cpp.s
 
+test_logging.o: test_logging.cpp.o
+.PHONY : test_logging.o
+
+# target to build an object file
+test_logging.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o
+.PHONY : test_logging.cpp.o
+
+test_logging.i: test_logging.cpp.i
+.PHONY : test_logging.i
+
+# target to preprocess a source file
+test_logging.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.i
+.PHONY : test_logging.cpp.i
+
+test_logging.s: test_logging.cpp.s
+.PHONY : test_logging.s
+
+# target to generate assembly for a file
+test_logging.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.s
+.PHONY : test_logging.cpp.s
+
+test_order_id_gen.o: test_order_id_gen.cpp.o
+.PHONY : test_order_id_gen.o
+
+# target to build an object file
+test_order_id_gen.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o
+.PHONY : test_order_id_gen.cpp.o
+
+test_order_id_gen.i: test_order_id_gen.cpp.i
+.PHONY : test_order_id_gen.i
+
+# target to preprocess a source file
+test_order_id_gen.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.i
+.PHONY : test_order_id_gen.cpp.i
+
+test_order_id_gen.s: test_order_id_gen.cpp.s
+.PHONY : test_order_id_gen.s
+
+# target to generate assembly for a file
+test_order_id_gen.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.s
+.PHONY : test_order_id_gen.cpp.s
+
 test_partial_fill.o: test_partial_fill.cpp.o
 .PHONY : test_partial_fill.o
 
@@ -283,6 +331,30 @@ test_partial_fill.s: test_partial_fill.cpp.s
 test_partial_fill.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.s
 .PHONY : test_partial_fill.cpp.s
+
+test_snapshot.o: test_snapshot.cpp.o
+.PHONY : test_snapshot.o
+
+# target to build an object file
+test_snapshot.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o
+.PHONY : test_snapshot.cpp.o
+
+test_snapshot.i: test_snapshot.cpp.i
+.PHONY : test_snapshot.i
+
+# target to preprocess a source file
+test_snapshot.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.i
+.PHONY : test_snapshot.cpp.i
+
+test_snapshot.s: test_snapshot.cpp.s
+.PHONY : test_snapshot.s
+
+# target to generate assembly for a file
+test_snapshot.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.s
+.PHONY : test_snapshot.cpp.s
 
 # Help Target
 help:
@@ -309,9 +381,18 @@ help:
 	@echo "... test_full_fill.o"
 	@echo "... test_full_fill.i"
 	@echo "... test_full_fill.s"
+	@echo "... test_logging.o"
+	@echo "... test_logging.i"
+	@echo "... test_logging.s"
+	@echo "... test_order_id_gen.o"
+	@echo "... test_order_id_gen.i"
+	@echo "... test_order_id_gen.s"
 	@echo "... test_partial_fill.o"
 	@echo "... test_partial_fill.i"
 	@echo "... test_partial_fill.s"
+	@echo "... test_snapshot.o"
+	@echo "... test_snapshot.i"
+	@echo "... test_snapshot.s"
 .PHONY : help
 
 

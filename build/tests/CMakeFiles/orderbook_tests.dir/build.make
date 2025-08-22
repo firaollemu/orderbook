@@ -156,6 +156,48 @@ tests/CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.s"
 	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_cancel_edge_case.cpp -o CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.s
 
+tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o: /Users/fglemu/Desktop/orderbook/tests/test_snapshot.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o -c /Users/fglemu/Desktop/orderbook/tests/test_snapshot.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.i"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/tests/test_snapshot.cpp > CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.s"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_snapshot.cpp -o CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o: /Users/fglemu/Desktop/orderbook/tests/test_order_id_gen.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o -c /Users/fglemu/Desktop/orderbook/tests/test_order_id_gen.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.i"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/tests/test_order_id_gen.cpp > CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.s"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_order_id_gen.cpp -o CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o: /Users/fglemu/Desktop/orderbook/tests/test_logging.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_logging.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_logging.cpp.o -c /Users/fglemu/Desktop/orderbook/tests/test_logging.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_logging.cpp.i"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/tests/test_logging.cpp > CMakeFiles/orderbook_tests.dir/test_logging.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_logging.cpp.s"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_logging.cpp -o CMakeFiles/orderbook_tests.dir/test_logging.cpp.s
+
 # Object files for target orderbook_tests
 orderbook_tests_OBJECTS = \
 "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o" \
@@ -163,7 +205,10 @@ orderbook_tests_OBJECTS = \
 "CMakeFiles/orderbook_tests.dir/test_cancel.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_full_fill.cpp.o" \
-"CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.o"
+"CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_logging.cpp.o"
 
 # External object files for target orderbook_tests
 orderbook_tests_EXTERNAL_OBJECTS =
@@ -174,12 +219,15 @@ tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_cancel.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_full_fill.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_cancel_edge_case.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/build.make
 tests/orderbook_tests: liborderbook_core.a
 tests/orderbook_tests: _deps/catch2-build/src/libCatch2Main.a
 tests/orderbook_tests: _deps/catch2-build/src/libCatch2.a
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable orderbook_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable orderbook_tests"
 	cd /Users/fglemu/Desktop/orderbook/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderbook_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /Users/fglemu/Desktop/orderbook/build/tests && /opt/homebrew/bin/cmake -D TEST_TARGET=orderbook_tests -D TEST_EXECUTABLE=/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/fglemu/Desktop/orderbook/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=orderbook_tests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D TEST_DL_PATHS= -D CTEST_FILE=/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests-b12d07c_tests.cmake -P /Users/fglemu/Desktop/orderbook/build/_deps/catch2-src/extras/CatchAddTests.cmake
 

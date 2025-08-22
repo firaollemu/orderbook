@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "order.hpp"
+#include "order_id_gen.hpp"
 
 struct Level {
     Px px{0};
@@ -18,7 +19,6 @@ struct GreaterPx {
     }
 };
 
-
 using BidMap = std::map<Px, Level, GreaterPx>;
 using AskMap = std::map<Px, Level>;
 using QueueIt = std::deque<Order>::iterator;
@@ -27,7 +27,6 @@ enum class BookSideTag : uint8_t {
     Bid,
     Ask
 };
-
 
 // A handle - a pointer into the live order book
 // Exists while order is live in book
@@ -45,6 +44,15 @@ class OrderBook {
         std::optional<Px> best_bid() const;
         std::optional<Px> best_ask() const;
         void clear();
+        std::vector<std::pair<Px, Qty>> top_bids(int depth) const;
+        std::vector<std::pair<Px, Qty>> top_asks(int depth) const;
+
+        struct SubmitResult {
+            OrderId id;
+            std::vector<Fill> fills;
+        };
+        
+        SubmitResult submit_limit(Order o);
 
     private:
         BidMap bids_;
@@ -54,5 +62,6 @@ class OrderBook {
 
         std::optional<Px> best_of(const BidMap& m) const;
         std::optional<Px> best_of(const AskMap& m) const;
+        OrderIdGen order_id_gen;
 };
 

@@ -1,0 +1,162 @@
+Start testing: Aug 21 16:10 EDT
+----------------------------------------------------------
+1/9 Testing: Add: resting order goes to correct side and best price updates
+1/9 Test: Add: resting order goes to correct side and best price updates
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Add: resting order goes to correct side and best price updates"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Add: resting order goes to correct side and best price updates" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Add: resting order goes to correct side and best price updates"
+Randomness seeded to: 3152516587
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Add: resting order goes to correct side and best price updates" end time: Aug 21 16:10 EDT
+"Add: resting order goes to correct side and best price updates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/9 Testing: Crossing generates fills at maker prices with FIFO across levells
+2/9 Test: Crossing generates fills at maker prices with FIFO across levells
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Crossing generates fills at maker prices with FIFO across levells"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Crossing generates fills at maker prices with FIFO across levells" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Crossing generates fills at maker prices with FIFO across levells"
+Randomness seeded to: 495690804
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Crossing generates fills at maker prices with FIFO across levells" end time: Aug 21 16:10 EDT
+"Crossing generates fills at maker prices with FIFO across levells" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/9 Testing: Cancel removes resting order and empty level
+3/9 Test: Cancel removes resting order and empty level
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Cancel removes resting order and empty level"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Cancel removes resting order and empty level" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Cancel removes resting order and empty level"
+Randomness seeded to: 3857093527
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Cancel removes resting order and empty level" end time: Aug 21 16:10 EDT
+"Cancel removes resting order and empty level" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/9 Testing: Partial Fill: taker < maker; maker stays in book with reduced size
+4/9 Test: Partial Fill: taker < maker; maker stays in book with reduced size
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Partial Fill: taker < maker; maker stays in book with reduced size"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Partial Fill: taker < maker; maker stays in book with reduced size" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Partial Fill: taker < maker; maker stays in book with reduced size"
+Randomness seeded to: 3128339483
+===============================================================================
+All tests passed (11 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Partial Fill: taker < maker; maker stays in book with reduced size" end time: Aug 21 16:10 EDT
+"Partial Fill: taker < maker; maker stays in book with reduced size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/9 Testing: Partial fill: taker spans multiple makers; remaining stays in orderbook
+5/9 Test: Partial fill: taker spans multiple makers; remaining stays in orderbook
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Partial fill: taker spans multiple makers; remaining stays in orderbook"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Partial fill: taker spans multiple makers; remaining stays in orderbook" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Partial fill: taker spans multiple makers; remaining stays in orderbook"
+Randomness seeded to: 2441040158
+===============================================================================
+All tests passed (14 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Partial fill: taker spans multiple makers; remaining stays in orderbook" end time: Aug 21 16:10 EDT
+"Partial fill: taker spans multiple makers; remaining stays in orderbook" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/9 Testing: Full fill: maker and taker request same amount. Fill goes through. Both are gone.
+6/9 Test: Full fill: maker and taker request same amount. Fill goes through. Both are gone.
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Full fill: maker and taker request same amount. Fill goes through. Both are gone."
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Full fill: maker and taker request same amount. Fill goes through. Both are gone." start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Full fill: maker and taker request same amount. Fill goes through. Both are gone."
+Randomness seeded to: 1523833714
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Full fill: maker and taker request same amount. Fill goes through. Both are gone." end time: Aug 21 16:10 EDT
+"Full fill: maker and taker request same amount. Fill goes through. Both are gone." time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/9 Testing: Cancel non-existent order id returns false and does nothing
+7/9 Test: Cancel non-existent order id returns false and does nothing
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Cancel non-existent order id returns false and does nothing"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Cancel non-existent order id returns false and does nothing" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Cancel non-existent order id returns false and does nothing"
+Randomness seeded to: 1657187235
+===============================================================================
+All tests passed (9 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Cancel non-existent order id returns false and does nothing" end time: Aug 21 16:10 EDT
+"Cancel non-existent order id returns false and does nothing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/9 Testing: Cancel prev order removes level and updates best price
+8/9 Test: Cancel prev order removes level and updates best price
+Command: "/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests" "Cancel prev order removes level and updates best price"
+Directory: /Users/fglemu/Desktop/orderbook/build/tests
+"Cancel prev order removes level and updates best price" start time: Aug 21 16:10 EDT
+Output:
+----------------------------------------------------------
+Filters: "Cancel prev order removes level and updates best price"
+Randomness seeded to: 3118706558
+===============================================================================
+All tests passed (11 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Cancel prev order removes level and updates best price" end time: Aug 21 16:10 EDT
+"Cancel prev order removes level and updates best price" time elapsed: 00:00:00
+----------------------------------------------------------
+
