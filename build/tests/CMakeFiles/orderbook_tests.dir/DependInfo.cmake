@@ -14,9 +14,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/fglemu/Desktop/orderbook/tests/test_cross_fill.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_cross_fill.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_cross_fill.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/tests/test_full_fill.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_full_fill.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_full_fill.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/tests/test_logging.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o.d"
+  "/Users/fglemu/Desktop/orderbook/tests/test_market.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/tests/test_order_id_gen.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_order_id_gen.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/tests/test_partial_fill.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.o.d"
+  "/Users/fglemu/Desktop/orderbook/tests/test_pnl.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/tests/test_snapshot.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o.d"
+  "/Users/fglemu/Desktop/orderbook/tests/test_strategy_baseline.cpp" "tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o" "gcc" "tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

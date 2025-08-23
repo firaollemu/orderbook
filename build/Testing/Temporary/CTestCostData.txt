@@ -1,13 +1,18 @@
-Add: resting order goes to correct side and best price updates 29 0.00069025
-Crossing generates fills at maker prices with FIFO across levells 29 0.00033892
-Cancel removes resting order and empty level 38 0.000258263
-Partial Fill: taker < maker; maker stays in book with reduced size 24 0.000968977
-Partial fill: taker spans multiple makers; remaining stays in orderbook 24 0.000553908
-Full fill: maker and taker request same amount. Fill goes through. Both are gone. 22 0.000636623
-Cancel non-existent order id returns false and does nothing 21 0.000779312
-Cancel prev order removes level and updates best price 21 0.000790982
+Add: resting order goes to correct side and best price updates 38 0.000590241
+Crossing generates fills at maker prices with FIFO across levells 38 0.000368123
+Cancel removes resting order and empty level 47 0.00028941
+Partial Fill: taker < maker; maker stays in book with reduced size 33 0.000965366
+Partial fill: taker spans multiple makers; remaining stays in orderbook 33 0.000337574
+Full fill: maker and taker request same amount. Fill goes through. Both are gone. 31 0.00163456
+Cancel non-existent order id returns false and does nothing 30 0.000624296
+Cancel prev order removes level and updates best price 30 0.000633547
 Stress test: adds/cancels/fills with invariants 0 0
-Snapshot returns top n levels with summed qty 15 0.00105526
-OrderIdGen is monotonic and unique 14 0.000962494
-csv logger writes header + rows 4 0.00781973
+Snapshot returns top n levels with summed qty 24 0.000431049
+OrderIdGen is monotonic and unique 23 0.000429382
+csv logger writes header + rows 13 0.00110839
+PnL buy then sell updates cash/invenotry and mark-to-market 8 0.0021047
+Market buy consumes asks best-first 3 0.00499125
+baseline_market_making: empty orderbook 1 0.015192
+baseline_market_making: best bid and ask 2 0.0089839
+no buy no ask 2 0.00750873
 ---

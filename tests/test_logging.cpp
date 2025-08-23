@@ -46,13 +46,11 @@ TEST_CASE("csv logger writes header + rows") {
         Fill{taker.id, maker2.id, maker2.px, 20, taker.ts},
     };
 
-    append_fills(fills, p.string());
+    csvlog::append_fills(fills, p.string());
 
     auto lines = read_lines(p);
     REQUIRE(lines.size() == 1 + fills.size());
     REQUIRE(lines[0] == "taker_id,maker_id,px,qty,ts");
     REQUIRE(lines[1] == "100,7,101,50,1");
     REQUIRE(lines[2] == "100,8,102,20,1");
-
-
 }

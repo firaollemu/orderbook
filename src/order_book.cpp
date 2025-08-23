@@ -224,3 +224,42 @@ OrderBook::SubmitResult OrderBook::submit_limit(Order o) {
         std::move(fills)
     };
 }
+
+
+std::vector<Fill> OrderBook::add_market(const MarketOrder& mo) {
+    std::vector<Fill> out;
+    Qty need = mo.qty;
+
+    auto fill_logic = [&](auto& opposite_side) {
+        while (need > 0 && !opposite_side.empty()) {
+            auto lvl_it = opposite_side.begin();
+            auto& fifo = lvl_it->second.fifo;
+
+            while (need > 0 && !fifo.empty()) {
+                Order& maker = fifo.front();
+                Qty traded = std::min<Qty>(need, maker.qty);
+
+                out.push_back(Fill{mo.id, maker.id, lvl_it->first, traded, mo.ts});
+
+                need -= traded;
+                maker.qty -= traded;
+
+                if (maker.qty == 0) {
+                    id_index_.erase(maker.id);
+                    fifo.pop_front();
+                }
+            }
+            if (fifo.empty()) {
+                opposite_side.erase(lvl_it);
+            }
+        }
+    };
+
+    if (mo.side == Side::Buy) {
+        fill_logic(asks_);
+    } else {
+        fill_logic(bids_);
+    }
+
+    return out;
+}

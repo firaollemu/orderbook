@@ -8,6 +8,9 @@ add_executable(orderbook_tests
     test_snapshot.cpp
     test_order_id_gen.cpp
     test_logging.cpp
+    test_pnl.cpp
+    test_market.cpp
+    test_strategy_baseline.cpp
 )
 
 target_link_libraries(orderbook_tests

@@ -284,6 +284,30 @@ test_logging.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.s
 .PHONY : test_logging.cpp.s
 
+test_market.o: test_market.cpp.o
+.PHONY : test_market.o
+
+# target to build an object file
+test_market.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.o
+.PHONY : test_market.cpp.o
+
+test_market.i: test_market.cpp.i
+.PHONY : test_market.i
+
+# target to preprocess a source file
+test_market.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.i
+.PHONY : test_market.cpp.i
+
+test_market.s: test_market.cpp.s
+.PHONY : test_market.s
+
+# target to generate assembly for a file
+test_market.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.s
+.PHONY : test_market.cpp.s
+
 test_order_id_gen.o: test_order_id_gen.cpp.o
 .PHONY : test_order_id_gen.o
 
@@ -332,6 +356,30 @@ test_partial_fill.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_partial_fill.cpp.s
 .PHONY : test_partial_fill.cpp.s
 
+test_pnl.o: test_pnl.cpp.o
+.PHONY : test_pnl.o
+
+# target to build an object file
+test_pnl.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.o
+.PHONY : test_pnl.cpp.o
+
+test_pnl.i: test_pnl.cpp.i
+.PHONY : test_pnl.i
+
+# target to preprocess a source file
+test_pnl.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.i
+.PHONY : test_pnl.cpp.i
+
+test_pnl.s: test_pnl.cpp.s
+.PHONY : test_pnl.s
+
+# target to generate assembly for a file
+test_pnl.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.s
+.PHONY : test_pnl.cpp.s
+
 test_snapshot.o: test_snapshot.cpp.o
 .PHONY : test_snapshot.o
 
@@ -355,6 +403,30 @@ test_snapshot.s: test_snapshot.cpp.s
 test_snapshot.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.s
 .PHONY : test_snapshot.cpp.s
+
+test_strategy_baseline.o: test_strategy_baseline.cpp.o
+.PHONY : test_strategy_baseline.o
+
+# target to build an object file
+test_strategy_baseline.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o
+.PHONY : test_strategy_baseline.cpp.o
+
+test_strategy_baseline.i: test_strategy_baseline.cpp.i
+.PHONY : test_strategy_baseline.i
+
+# target to preprocess a source file
+test_strategy_baseline.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.i
+.PHONY : test_strategy_baseline.cpp.i
+
+test_strategy_baseline.s: test_strategy_baseline.cpp.s
+.PHONY : test_strategy_baseline.s
+
+# target to generate assembly for a file
+test_strategy_baseline.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.s
+.PHONY : test_strategy_baseline.cpp.s
 
 # Help Target
 help:
@@ -384,15 +456,24 @@ help:
 	@echo "... test_logging.o"
 	@echo "... test_logging.i"
 	@echo "... test_logging.s"
+	@echo "... test_market.o"
+	@echo "... test_market.i"
+	@echo "... test_market.s"
 	@echo "... test_order_id_gen.o"
 	@echo "... test_order_id_gen.i"
 	@echo "... test_order_id_gen.s"
 	@echo "... test_partial_fill.o"
 	@echo "... test_partial_fill.i"
 	@echo "... test_partial_fill.s"
+	@echo "... test_pnl.o"
+	@echo "... test_pnl.i"
+	@echo "... test_pnl.s"
 	@echo "... test_snapshot.o"
 	@echo "... test_snapshot.i"
 	@echo "... test_snapshot.s"
+	@echo "... test_strategy_baseline.o"
+	@echo "... test_strategy_baseline.i"
+	@echo "... test_strategy_baseline.s"
 .PHONY : help
 
 

@@ -37,6 +37,16 @@ struct Handle {
     QueueIt qit; // iterator 
 };
 
+
+struct MarketOrder {
+    OrderId id;
+    Side side;
+    Qty qty;
+    std::uint64_t ts{0};
+    std::uint32_t user_tag{0};
+};
+
+
 class OrderBook {
     public:
         std::vector<Fill> add_limit(const Order& o);
@@ -53,12 +63,13 @@ class OrderBook {
         };
         
         SubmitResult submit_limit(Order o);
+        std::vector<Fill> add_market(const MarketOrder& mo);
 
     private:
         BidMap bids_;
         AskMap asks_;
 
-        std::unordered_map<OrderId, Handle> id_index_;
+        std::unordered_map<OrderId, Handle> id_index_; // allows O(1) cancellation of an order by id
 
         std::optional<Px> best_of(const BidMap& m) const;
         std::optional<Px> best_of(const AskMap& m) const;
