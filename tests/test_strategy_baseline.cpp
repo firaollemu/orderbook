@@ -13,7 +13,7 @@ TEST_CASE("baseline_market_making: empty orderbook") {
     OrderBook ob;
     PnL pnl;
     OrderIdGen ids;
-    BaseLineMarketMaking mm;
+    aStrategy::BaseLineMarketMaking mm;
     
     EngineAPI api{ob, pnl, ids, 1};
     auto actions = mm.step(api);
@@ -36,7 +36,7 @@ TEST_CASE("baseline_market_making: best bid and ask") {
     PnL pnl;
     pnl.inventory = 4;
     OrderIdGen ids;
-    BaseLineMarketMaking mm;
+    aStrategy::BaseLineMarketMaking mm;
     
     EngineAPI api{ob, pnl, ids, 1};
     auto actions = mm.step(api);
@@ -53,7 +53,7 @@ TEST_CASE("no buy no ask") {
     OrderBook ob;
     PnL pnl;
     OrderIdGen ids;
-    BaseLineMarketMaking mm;
+    aStrategy::BaseLineMarketMaking mm;
 
     EngineAPI api{ob, pnl, ids, 1};
     auto actions = mm.step(api);

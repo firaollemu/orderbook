@@ -13,7 +13,6 @@ namespace csvlog {
         }
     }
 
-
 inline void append_fills(const std::vector<Fill>& fills, const std::string& csv_path="data/processed/fills.csv") {
     using std::filesystem::exists;
     using std::filesystem::file_size;

@@ -11,6 +11,8 @@ add_executable(orderbook_tests
     test_pnl.cpp
     test_market.cpp
     test_strategy_baseline.cpp
+    test_strategy_cancel_and_replace.cpp
+    ../src/market_maker.cpp
 )
 
 target_link_libraries(orderbook_tests

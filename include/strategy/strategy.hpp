@@ -14,8 +14,16 @@ struct EngineAPI {
 };
 
 
-// Quote Action: a single action the strategy wants to take in the market
-struct QuoteAction {
+enum class ModType : uint8_t {
+    New, 
+    Cancel,
+    Modify
+};
+
+
+struct ModAction {
+    ModType type;
+    OrderId id = kInvalidOrderId;
     Side side;
     Px px;
     Qty qty;
@@ -28,7 +36,7 @@ struct StrategyInterface {
     // virtual function: allow for polymorphisms in cpp
     virtual  ~StrategyInterface() = default;
 
-    virtual std::vector<QuoteAction> step(const EngineAPI& api) = 0;
+    virtual std::vector<ModAction> step(EngineAPI& api) = 0;
     // = 0 forces the derived class to provide an implementation
     // each different strategy just implements step() and returns a set of actions (QuoteAction)
 };

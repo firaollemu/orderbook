@@ -8,3 +8,7 @@ cmake -S . -B build -DCMAKE_CXX_COMPILER=clang++
 cmake --build build
 ./build/orderbook
 
+# To run test:
+```bash
+ctest --test-dir build -V  
+

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o"
+  "CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o.d"
   "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o"
   "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o.d"
   "CMakeFiles/orderbook_tests.dir/test_cancel.cpp.o"
@@ -23,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/orderbook_tests.dir/test_snapshot.cpp.o.d"
   "CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o"
   "CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o.d"
+  "CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o"
+  "CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o.d"
   "orderbook_tests"
   "orderbook_tests-b12d07c_tests.cmake"
   "orderbook_tests.pdb"

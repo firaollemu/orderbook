@@ -240,6 +240,34 @@ tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.s"
 	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_strategy_baseline.cpp -o CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.s
 
+tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o: /Users/fglemu/Desktop/orderbook/tests/test_strategy_cancel_and_replace.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o -c /Users/fglemu/Desktop/orderbook/tests/test_strategy_cancel_and_replace.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.i"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/tests/test_strategy_cancel_and_replace.cpp > CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.s"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/tests/test_strategy_cancel_and_replace.cpp -o CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o: /Users/fglemu/Desktop/orderbook/src/market_maker.cpp
+tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o -MF CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o.d -o CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o -c /Users/fglemu/Desktop/orderbook/src/market_maker.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.i"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/src/market_maker.cpp > CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.s"
+	cd /Users/fglemu/Desktop/orderbook/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/src/market_maker.cpp -o CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.s
+
 # Object files for target orderbook_tests
 orderbook_tests_OBJECTS = \
 "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o" \
@@ -253,7 +281,9 @@ orderbook_tests_OBJECTS = \
 "CMakeFiles/orderbook_tests.dir/test_logging.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_pnl.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_market.cpp.o" \
-"CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o"
+"CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o"
 
 # External object files for target orderbook_tests
 orderbook_tests_EXTERNAL_OBJECTS =
@@ -270,12 +300,14 @@ tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_logging.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_pnl.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_market.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/build.make
 tests/orderbook_tests: liborderbook_core.a
 tests/orderbook_tests: _deps/catch2-build/src/libCatch2Main.a
 tests/orderbook_tests: _deps/catch2-build/src/libCatch2.a
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable orderbook_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable orderbook_tests"
 	cd /Users/fglemu/Desktop/orderbook/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderbook_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /Users/fglemu/Desktop/orderbook/build/tests && /opt/homebrew/bin/cmake -D TEST_TARGET=orderbook_tests -D TEST_EXECUTABLE=/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/fglemu/Desktop/orderbook/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=orderbook_tests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D TEST_DL_PATHS= -D CTEST_FILE=/Users/fglemu/Desktop/orderbook/build/tests/orderbook_tests-b12d07c_tests.cmake -P /Users/fglemu/Desktop/orderbook/build/_deps/catch2-src/extras/CatchAddTests.cmake
 

@@ -1,1 +1,2 @@
-14:baseline_market_making: empty orderbook
+17:Baseline market making does not stack identical quotes
+18:Baseline market making places new orders if target prices have changed

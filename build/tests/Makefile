@@ -140,6 +140,30 @@ orderbook_tests/fast:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/build
 .PHONY : orderbook_tests/fast
 
+__/src/market_maker.o: __/src/market_maker.cpp.o
+.PHONY : __/src/market_maker.o
+
+# target to build an object file
+__/src/market_maker.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o
+.PHONY : __/src/market_maker.cpp.o
+
+__/src/market_maker.i: __/src/market_maker.cpp.i
+.PHONY : __/src/market_maker.i
+
+# target to preprocess a source file
+__/src/market_maker.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.i
+.PHONY : __/src/market_maker.cpp.i
+
+__/src/market_maker.s: __/src/market_maker.cpp.s
+.PHONY : __/src/market_maker.s
+
+# target to generate assembly for a file
+__/src/market_maker.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.s
+.PHONY : __/src/market_maker.cpp.s
+
 test_basic_add.o: test_basic_add.cpp.o
 .PHONY : test_basic_add.o
 
@@ -428,6 +452,30 @@ test_strategy_baseline.cpp.s:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_baseline.cpp.s
 .PHONY : test_strategy_baseline.cpp.s
 
+test_strategy_cancel_and_replace.o: test_strategy_cancel_and_replace.cpp.o
+.PHONY : test_strategy_cancel_and_replace.o
+
+# target to build an object file
+test_strategy_cancel_and_replace.cpp.o:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.o
+.PHONY : test_strategy_cancel_and_replace.cpp.o
+
+test_strategy_cancel_and_replace.i: test_strategy_cancel_and_replace.cpp.i
+.PHONY : test_strategy_cancel_and_replace.i
+
+# target to preprocess a source file
+test_strategy_cancel_and_replace.cpp.i:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.i
+.PHONY : test_strategy_cancel_and_replace.cpp.i
+
+test_strategy_cancel_and_replace.s: test_strategy_cancel_and_replace.cpp.s
+.PHONY : test_strategy_cancel_and_replace.s
+
+# target to generate assembly for a file
+test_strategy_cancel_and_replace.cpp.s:
+	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_strategy_cancel_and_replace.cpp.s
+.PHONY : test_strategy_cancel_and_replace.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -438,6 +486,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... orderbook_tests"
+	@echo "... __/src/market_maker.o"
+	@echo "... __/src/market_maker.i"
+	@echo "... __/src/market_maker.s"
 	@echo "... test_basic_add.o"
 	@echo "... test_basic_add.i"
 	@echo "... test_basic_add.s"
@@ -474,6 +525,9 @@ help:
 	@echo "... test_strategy_baseline.o"
 	@echo "... test_strategy_baseline.i"
 	@echo "... test_strategy_baseline.s"
+	@echo "... test_strategy_cancel_and_replace.o"
+	@echo "... test_strategy_cancel_and_replace.i"
+	@echo "... test_strategy_cancel_and_replace.s"
 .PHONY : help
 
 
