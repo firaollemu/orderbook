@@ -8,7 +8,7 @@ cmake --build build
 ./build/orderbook
 
 # To run test:
-```bash
+
 ctest --test-dir build -V  
 ```
 
