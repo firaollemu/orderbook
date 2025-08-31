@@ -12,3 +12,6 @@ cmake --build build
 ctest --test-dir build -V  
 ```
 
+Resources used:
+
+https://www.youtube.com/watch?v=sX2nF1fW7kI
