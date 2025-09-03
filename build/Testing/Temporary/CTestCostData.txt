@@ -1,20 +1,20 @@
-Add: resting order goes to correct side and best price updates 41 0.000727454
-Crossing generates fills at maker prices with FIFO across levells 41 0.00101949
-Cancel removes resting order and empty level 50 0.000271412
-Partial Fill: taker < maker; maker stays in book with reduced size 36 0.000453294
-Partial fill: taker spans multiple makers; remaining stays in orderbook 36 0.000472803
-Full fill: maker and taker request same amount. Fill goes through. Both are gone. 34 0.000636053
-Cancel non-existent order id returns false and does nothing 33 0.000298003
-Cancel prev order removes level and updates best price 33 0.000314717
+Add: resting order goes to correct side and best price updates 45 0.00069109
+Crossing generates fills at maker prices with FIFO across levells 45 0.000523458
+Cancel removes resting order and empty level 54 0.000245281
+Partial Fill: taker < maker; maker stays in book with reduced size 40 0.000332263
+Partial fill: taker spans multiple makers; remaining stays in orderbook 40 0.00038167
+Full fill: maker and taker request same amount. Fill goes through. Both are gone. 38 0.000382508
+Cancel non-existent order id returns false and does nothing 37 0.00048116
+Cancel prev order removes level and updates best price 37 0.000485304
 Stress test: adds/cancels/fills with invariants 0 0
-Snapshot returns top n levels with summed qty 27 0.000615443
-OrderIdGen is monotonic and unique 26 0.000553811
-csv logger writes header + rows 16 0.00124846
-PnL buy then sell updates cash/invenotry and mark-to-market 11 0.00157316
-Market buy consumes asks best-first 6 0.00277439
-baseline_market_making: empty orderbook 4 0.0037596
-baseline_market_making: best bid and ask 5 0.00278416
-no buy no ask 5 0.00382205
-Baseline market making does not stack identical quotes 1 0.0140012
-Baseline market making places new orders if target prices have changed 1 0.0175975
+Snapshot returns top n levels with summed qty 31 0.000419618
+OrderIdGen is monotonic and unique 30 0.000397979
+csv logger writes header + rows 20 0.00167323
+PnL buy then sell updates cash/invenotry and mark-to-market 15 0.000953658
+Market buy consumes asks best-first 10 0.0013341
+baseline_market_making: empty orderbook 8 0.00163602
+baseline_market_making: best bid and ask 9 0.00152508
+no buy no ask 9 0.00144886
+Baseline market making does not stack identical quotes 5 0.00285301
+Baseline market making places new orders if target prices have changed 2 0.0074926
 ---

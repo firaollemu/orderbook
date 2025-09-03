@@ -140,30 +140,6 @@ orderbook_tests/fast:
 	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/build
 .PHONY : orderbook_tests/fast
 
-__/src/market_maker.o: __/src/market_maker.cpp.o
-.PHONY : __/src/market_maker.o
-
-# target to build an object file
-__/src/market_maker.cpp.o:
-	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o
-.PHONY : __/src/market_maker.cpp.o
-
-__/src/market_maker.i: __/src/market_maker.cpp.i
-.PHONY : __/src/market_maker.i
-
-# target to preprocess a source file
-__/src/market_maker.cpp.i:
-	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.i
-.PHONY : __/src/market_maker.cpp.i
-
-__/src/market_maker.s: __/src/market_maker.cpp.s
-.PHONY : __/src/market_maker.s
-
-# target to generate assembly for a file
-__/src/market_maker.cpp.s:
-	cd /Users/fglemu/Desktop/orderbook/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.s
-.PHONY : __/src/market_maker.cpp.s
-
 test_basic_add.o: test_basic_add.cpp.o
 .PHONY : test_basic_add.o
 
@@ -486,9 +462,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... orderbook_tests"
-	@echo "... __/src/market_maker.o"
-	@echo "... __/src/market_maker.i"
-	@echo "... __/src/market_maker.s"
 	@echo "... test_basic_add.o"
 	@echo "... test_basic_add.i"
 	@echo "... test_basic_add.s"

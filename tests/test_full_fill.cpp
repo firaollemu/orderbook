@@ -22,7 +22,7 @@ TEST_CASE("Full fill: maker and taker request same amount. Fill goes through. Bo
     REQUIRE_FALSE(ob.best_bid().has_value());
 
 
-    SECTION("Revers. Buy order first and sell ordr next") {
+    SECTION("Reverse. Buy order first and sell ordr next") {
         OrderBook ob2;
         ob2.add_limit(mk_order(300, Side::Buy, 1001, 50));
         auto fill1 = ob2.add_limit(mk_order(400, Side::Sell, 1001, 50));

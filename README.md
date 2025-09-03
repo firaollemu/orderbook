@@ -8,9 +8,12 @@ cmake --build build
 ./build/orderbook
 
 # To run test:
+<<<<<<< HEAD
 
+=======
+>>>>>>> b0ff175 (added the Avellaneda Stoikov Market making strategy)
 ctest --test-dir build -V  
-```
+
 
 Resources used:
 

@@ -12,7 +12,7 @@ add_executable(orderbook_tests
     test_market.cpp
     test_strategy_baseline.cpp
     test_strategy_cancel_and_replace.cpp
-    ../src/market_maker.cpp
+    test_avellaneda_stoikov.cpp
 )
 
 target_link_libraries(orderbook_tests

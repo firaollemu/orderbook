@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o"
+  "CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o.d"
   "CMakeFiles/orderbook_core.dir/src/order_book.cpp.o"
   "CMakeFiles/orderbook_core.dir/src/order_book.cpp.o.d"
   "liborderbook_core.a"

@@ -4,6 +4,10 @@
 #include "order_book.hpp"
 #include "pnl.hpp"
 #include "order_id_gen.hpp"
+#include "order.hpp"
+#include "modification_action.hpp"
+
+using aStrategy::ModificationAction;
 
 
 struct EngineAPI {
@@ -14,21 +18,12 @@ struct EngineAPI {
 };
 
 
-enum class ModType : uint8_t {
-    New, 
-    Cancel,
-    Modify
-};
-
-
-struct ModAction {
-    ModType type;
-    OrderId id = kInvalidOrderId;
+// Quote Action: a single action the strategy wants to take in the market
+struct QuoteAction {
     Side side;
     Px px;
     Qty qty;
 };
-
 
 // use struct instead of class since we want all memebers to be public
 struct StrategyInterface {
@@ -36,7 +31,7 @@ struct StrategyInterface {
     // virtual function: allow for polymorphisms in cpp
     virtual  ~StrategyInterface() = default;
 
-    virtual std::vector<ModAction> step(EngineAPI& api) = 0;
+    virtual std::vector<ModificationAction> step(EngineAPI& api) = 0;
     // = 0 forces the derived class to provide an implementation
     // each different strategy just implements step() and returns a set of actions (QuoteAction)
 };

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OrderBook.dir/src/demo.cpp.o"
   "CMakeFiles/OrderBook.dir/src/demo.cpp.o.d"
-  "CMakeFiles/OrderBook.dir/src/order_book.cpp.o"
-  "CMakeFiles/OrderBook.dir/src/order_book.cpp.o.d"
   "OrderBook"
   "OrderBook.pdb"
 )

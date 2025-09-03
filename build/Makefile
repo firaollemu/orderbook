@@ -555,6 +555,30 @@ orderbook_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/build
 .PHONY : orderbook_tests/fast
 
+src/baseline_market_making.o: src/baseline_market_making.cpp.o
+.PHONY : src/baseline_market_making.o
+
+# target to build an object file
+src/baseline_market_making.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o
+.PHONY : src/baseline_market_making.cpp.o
+
+src/baseline_market_making.i: src/baseline_market_making.cpp.i
+.PHONY : src/baseline_market_making.i
+
+# target to preprocess a source file
+src/baseline_market_making.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.i
+.PHONY : src/baseline_market_making.cpp.i
+
+src/baseline_market_making.s: src/baseline_market_making.cpp.s
+.PHONY : src/baseline_market_making.s
+
+# target to generate assembly for a file
+src/baseline_market_making.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.s
+.PHONY : src/baseline_market_making.cpp.s
+
 src/demo.o: src/demo.cpp.o
 .PHONY : src/demo.o
 
@@ -585,7 +609,6 @@ src/order_book.o: src/order_book.cpp.o
 # target to build an object file
 src/order_book.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/order_book.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBook.dir/build.make CMakeFiles/OrderBook.dir/src/order_book.cpp.o
 .PHONY : src/order_book.cpp.o
 
 src/order_book.i: src/order_book.cpp.i
@@ -594,7 +617,6 @@ src/order_book.i: src/order_book.cpp.i
 # target to preprocess a source file
 src/order_book.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/order_book.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBook.dir/build.make CMakeFiles/OrderBook.dir/src/order_book.cpp.i
 .PHONY : src/order_book.cpp.i
 
 src/order_book.s: src/order_book.cpp.s
@@ -603,7 +625,6 @@ src/order_book.s: src/order_book.cpp.s
 # target to generate assembly for a file
 src/order_book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_core.dir/build.make CMakeFiles/orderbook_core.dir/src/order_book.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrderBook.dir/build.make CMakeFiles/OrderBook.dir/src/order_book.cpp.s
 .PHONY : src/order_book.cpp.s
 
 # Help Target
@@ -648,6 +669,9 @@ help:
 	@echo "... OrderBook"
 	@echo "... orderbook_core"
 	@echo "... orderbook_tests"
+	@echo "... src/baseline_market_making.o"
+	@echo "... src/baseline_market_making.i"
+	@echo "... src/baseline_market_making.s"
 	@echo "... src/demo.o"
 	@echo "... src/demo.i"
 	@echo "... src/demo.s"

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o"
-  "CMakeFiles/orderbook_tests.dir/__/src/market_maker.cpp.o.d"
   "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o"
   "CMakeFiles/orderbook_tests.dir/test_basic_add.cpp.o.d"
   "CMakeFiles/orderbook_tests.dir/test_cancel.cpp.o"

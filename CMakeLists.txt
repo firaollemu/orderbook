@@ -8,12 +8,12 @@ include(CTest)
 enable_testing()
 
 add_library(orderbook_core
-    src/order_book.cpp)
+    src/order_book.cpp
+    src/baseline_market_making.cpp)
 
 target_include_directories(orderbook_core PUBLIC include)
 add_executable(OrderBook
-    src/demo.cpp
-    src/order_book.cpp)
+    src/demo.cpp)
 target_link_libraries(OrderBook PRIVATE orderbook_core)
 
 

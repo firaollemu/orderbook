@@ -57,7 +57,7 @@ TEST_CASE("no buy no ask") {
 
     EngineAPI api{ob, pnl, ids, 1};
     auto actions = mm.step(api);
-    apply_actions(actions, api);
+    aStrat::apply_modifications(actions, api);
 
 
     auto best_bid = ob.best_bid();

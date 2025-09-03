@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/fglemu/Desktop/orderbook/src/baseline_market_making.cpp" "CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o" "gcc" "CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o.d"
   "/Users/fglemu/Desktop/orderbook/src/order_book.cpp" "CMakeFiles/orderbook_core.dir/src/order_book.cpp.o" "gcc" "CMakeFiles/orderbook_core.dir/src/order_book.cpp.o.d"
   )
 

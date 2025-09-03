@@ -86,17 +86,33 @@ CMakeFiles/orderbook_core.dir/src/order_book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_core.dir/src/order_book.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/src/order_book.cpp -o CMakeFiles/orderbook_core.dir/src/order_book.cpp.s
 
+CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o: CMakeFiles/orderbook_core.dir/flags.make
+CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o: /Users/fglemu/Desktop/orderbook/src/baseline_market_making.cpp
+CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o: CMakeFiles/orderbook_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o -MF CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o.d -o CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o -c /Users/fglemu/Desktop/orderbook/src/baseline_market_making.cpp
+
+CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fglemu/Desktop/orderbook/src/baseline_market_making.cpp > CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.i
+
+CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fglemu/Desktop/orderbook/src/baseline_market_making.cpp -o CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.s
+
 # Object files for target orderbook_core
 orderbook_core_OBJECTS = \
-"CMakeFiles/orderbook_core.dir/src/order_book.cpp.o"
+"CMakeFiles/orderbook_core.dir/src/order_book.cpp.o" \
+"CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o"
 
 # External object files for target orderbook_core
 orderbook_core_EXTERNAL_OBJECTS =
 
 liborderbook_core.a: CMakeFiles/orderbook_core.dir/src/order_book.cpp.o
+liborderbook_core.a: CMakeFiles/orderbook_core.dir/src/baseline_market_making.cpp.o
 liborderbook_core.a: CMakeFiles/orderbook_core.dir/build.make
 liborderbook_core.a: CMakeFiles/orderbook_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liborderbook_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fglemu/Desktop/orderbook/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liborderbook_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/orderbook_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderbook_core.dir/link.txt --verbose=$(VERBOSE)
 
